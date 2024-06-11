@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Vue 3</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hello, Vue :)</h1>
+
+    <div id="app">
+
+        <a :href="url">Best Website Ever</a>
+
+        <div v-if="showBooks">
+            <ul>
+                <img src="" :alt="book.title"
+                <li v-for="book in books">
+                    <h3>{{ book.title }}</h3>
+                    <p>{{ book.author }}</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <button @click="age++">Increase Age</button>
+        <button @click="age--">Decrease Age</button>
+
+        <div @click="changeTitle('Oathbringer')">Change book title</div> -->
+        
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+        </button>
+
+        <!-- <div v-show="showBooks">Currently showing books</div> -->
+         <br>
+         <!-- mouse events -->
+          <div class="box" @mouseover="handleEvent($event, 5)">Mouse Over</div>
+          <div class="box" @mouseleave="handleEvent">Mouse Leave</div>
+          <div class="box" @dblclick="handleEvent">Double Click</div>
+          <div class="box" @mousemove="handleMouseMove">position - {{ x }} - {{ y }}</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
