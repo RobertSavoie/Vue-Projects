@@ -6,9 +6,9 @@ const app = Vue.createApp({
             url: 'https://www.thenetninja.co.uk',
             showBooks: true,
             books: [
-                { title: 'Name of the Wind', author: 'Patrick Rothfuss'},
-                { title: 'The Way of Kings', author: 'Brandon Sanderson'},
-                { title: 'The Final Empire', author: 'Brandon Sanderson'}
+                { title: 'Name of the Wind', author: 'Patrick Rothfuss', img: 'assets/1.jpg'},
+                { title: 'The Way of Kings', author: 'Brandon Sanderson', img: 'assets/2.jpg'},
+                { title: 'The Final Empire', author: 'Brandon Sanderson', img: 'assets/3.jpg'}
             ],
             x: 0,
             y: 0
